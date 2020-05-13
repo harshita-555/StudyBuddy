@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".group.GroupInfoActivity">
+
+    <ImageView
+        android:id="@+id/info_pic"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/user_img"
+        android:layout_marginBottom="2dp"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:text="TextView" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"
+        android:text="Participants" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/info_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sbj.FlashCardDetailActivity">
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/flashcard_detail_pager"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center_horizontal">
+
+
+
+        <ImageButton
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_back"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/back_32" />
+        <ImageButton
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_shuffle"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/shuffle_32" />
+
+        <ImageButton
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_next"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/next_32" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

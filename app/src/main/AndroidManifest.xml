@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studybuddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".StudyBuddy"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".quizzes.QuizResult"
+            android:parentActivityName=".clsrm.ClassroomActivity" />
+        <activity
+            android:name=".quizzes.AttemptQuiz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".timetable.TimeTableActivity"
+            android:label="Your TO-DO List"
+            android:parentActivityName=".StudentActivity" />
+        <activity
+            android:name=".timetable.NewTask"
+            android:label="Your Task"
+            android:parentActivityName=".timetable.TimeTableActivity" />
+        <activity
+            android:name=".clsrm.ShareTestActivity"
+            android:parentActivityName=".clsrm.ClassroomActivity" />
+        <activity android:name=".quizzes.FormNewQuiz" />
+        <activity
+            android:name=".clsrm.classInfoActivity"
+            android:label="Class Info"
+            android:parentActivityName=".clsrm.classChatActivity" />
+        <activity
+            android:name=".clsrm.classChatActivity"
+            android:parentActivityName=".clsrm.ClassroomActivity" />
+        <activity
+            android:name=".clsrm.FormNewClass"
+            android:label="Form New Class"
+            android:parentActivityName=".clsrm.ClassroomActivity" />
+        <activity android:name=".sbj.AddFlashCard" />
+        <activity android:name=".sbj.FlashCardDetailActivity" />
+        <activity android:name=".sbj.NoteDetailActivity" />
+        <activity
+            android:name=".sbj.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".sbj.SubjectActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sbj.SubjectActivity"
+            android:label="Your Subjects"
+            android:parentActivityName=".sbj.SubjectsActivity" />
+        <activity
+            android:name=".sbj.SubjectsActivity"
+            android:label="Your Subjects"
+            android:parentActivityName=".StudentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".StudentActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Study Buddies" />
+        <activity
+            android:name=".clsrm.ClassroomActivity"
+            android:label="Your Classrooms"
+            android:parentActivityName=".StudentActivity" />
+        <activity
+            android:name=".group.GroupActivity"
+            android:label="Groups"
+            android:parentActivityName=".StudentActivity" />
+        <activity
+            android:name=".group.AllUsersActivity"
+            android:label="All Users"
+            android:parentActivityName=".group.GroupActivity" />
+        <activity
+            android:name=".group.FormNewGroup"
+            android:parentActivityName=".group.GroupActivity" />
+        <activity
+            android:name=".group.GroupChatActivity"
+            android:parentActivityName=".group.GroupActivity" />
+        <activity
+            android:name=".group.SingleChatActivity"
+            android:parentActivityName=".group.GroupActivity" />
+        <activity
+            android:name=".group.GroupInfoActivity"
+            android:label="Group Info" />
+        <activity android:name=".WorkActivity" />
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

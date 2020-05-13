@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".timetable.NewTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Title  :"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="enter title"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Msg   :"
+
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/msg_edit"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="enter message"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Date   :"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/date_edit"
+            android:focusableInTouchMode="false"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="enter deadline"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/saveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:text="Save" />
+
+
+</LinearLayout>

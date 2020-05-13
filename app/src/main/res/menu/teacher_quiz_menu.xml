@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"  >
+    <item android:id="@+id/share_quiz" android:title="Share Quiz"></item>
+    <item android:id="@+id/view_result" android:title="View Results"></item>
+    <item android:id="@+id/delete_quiz" android:title="Delete Quiz"></item>
+
+
+
+</menu>

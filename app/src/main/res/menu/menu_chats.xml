@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Create Group"
+        android:id="@+id/menu_create_group"></item>
+    <item android:title="Invite Friends"
+        android:id="@+id/menu_invite_friends"></item>
+
+
+</menu>

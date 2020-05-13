@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".group.SingleChatActivity">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:stackFromBottom="true"
+        android:layout_above="@+id/linearLayout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:background="#FFFFFF"
+            android:id="@+id/linearLayout">
+
+
+            <ImageButton
+                android:id="@+id/chatAddButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:src="@drawable/screenshot_32" />
+
+            <EditText
+                android:id="@+id/chatMessageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter the message"
+                android:focusableInTouchMode="true"
+                android:layout_weight="0.99" />
+
+            <ImageButton
+                android:id="@+id/chatSendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:src="@drawable/play_32"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
