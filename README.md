@@ -26,4 +26,4 @@ It has many features including live chats , uploading images,docs and videos , m
  * make timed quizzes with deadlines
  * attempt quiz and see result
  
-
+<br>note : images present in the screenshots folder
